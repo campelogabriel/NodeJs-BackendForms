@@ -1,9 +1,11 @@
 {
   "name": "backend-formsapi",
   "version": "1.0.0",
+  "type": "module",
   "description": "backend's application Forms",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon -I --exec node --experimental-specifier-resolution=node  --loader ts-node/esm ./src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Gabriel Campelo Vieira",
@@ -14,6 +16,9 @@
     "@typescript-eslint/eslint-plugin": "^6.18.1",
     "@typescript-eslint/parser": "^6.18.1",
     "eslint": "^8.56.0",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.3.3"
   },
   "dependencies": {
